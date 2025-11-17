@@ -141,7 +141,7 @@ class JobCard(Document):
 		self.validate_time_logs()
 		self.set_status()
 		self.validate_operation_id()
-		self.validate_sequence_id()
+		#self.validate_sequence_id()
 		self.set_sub_operations()
 		self.update_sub_operation_status()
 		self.validate_work_order()
@@ -1306,3 +1306,4 @@ def make_corrective_job_card(source_name, operation=None, for_operation=None, ta
 	)
 
 	return doclist
+
